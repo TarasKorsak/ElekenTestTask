@@ -1,0 +1,29 @@
+{
+  "name": "ElekenTestTask",
+  "version": "1.0.0",
+  "description": "ElekenTestTask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarasKorsak/ElekenTestTask.git"
+  },
+  "author": "TarasKorsak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarasKorsak/ElekenTestTask/issues"
+  },
+  "homepage": "https://github.com/TarasKorsak/ElekenTestTask#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
