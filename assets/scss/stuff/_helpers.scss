@@ -1,0 +1,40 @@
+
+.circle {
+    border-radius: 50%;
+    width: 1.4rem;
+	height: 1.4rem;
+}
+.f-r {
+float: right;
+}
+.ml-5 {
+  margin-left: 0.5rem;
+}
+.mr-5 {
+  margin-right: 0.5rem;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.gold {
+	background-color: $gold;
+}
+.silver {
+	background-color: $silver;
+}
+.platinum {
+	background-color: $platinum;
+}
+.bronze {
+	background-color: $bronze;
+}
