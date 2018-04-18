@@ -1,0 +1,10 @@
+
+body, div, p, section, footer, header, aside, button, main, nav, ul, li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+}
+section, .card {
+  overflow: hidden;
+}
