@@ -23,15 +23,13 @@
 	
 	}
 	.logo {
-		margin-right: 30.6rem;
+		margin-right: 30.4rem;
 		align-self: center;
 		@media (max-width: 768px) {
 			margin: 0 0;
 		}
 	}
 	nav {
-		display: flex;
-		align-items: stretch;
 		@media (max-width: 1024px) {
 			display: none;
 		}
@@ -41,7 +39,7 @@
 			line-height: 4.5rem;
 			list-style: none;
 			.nav_item {
-				margin-left: 1rem;
+				margin-left: 1.6rem;
 				padding: 1rem;
 				cursor: pointer;
 				a {
@@ -241,6 +239,7 @@
 			width: 14.1rem;
 			height: 4rem;
 			font-size: 1.2rem;
+			line-height: 1.4rem;
 			font-weight: 600;
 			letter-spacing: 0.084rem;
 			text-transform: uppercase;
@@ -252,11 +251,13 @@
 			color: $blue;
 			border: 0.1rem solid $grey010;
 			margin-left: -0.1rem;
+			padding-left: 0.4rem;
 		}
 		.buy {
 			color: white;
 			background: blue;
 			border: none;
+			padding-left: 0.8rem;
 			margin-right: -0.1rem;			
 		}
 		
@@ -286,8 +287,16 @@ footer {
 	}
 	.footer_nav {
 		display: flex;
+		align-items: stretch;
 		@media (max-width: 1024px) {
 			display: none;
+		}
+		li {
+			list-style-type: none;
+		}
+		ul {
+			margin-left: 0;
+			padding-left: 0;
 		}
 		a {
 			text-decoration: none;
@@ -299,7 +308,8 @@ footer {
 	}
 	.footer_nav_item {
 		color: $black070;
-		font-size: 1.2rem;    
+		font-size: 1.2rem;
+		margin-left: 3rem;    
 	}
 	
 }
