@@ -13,14 +13,23 @@ $white: #fff;
 
 $blue: #2985F7; //button "buy" background + "overview" font color
 
-$mainContainer: 144rem;
-
-$containerHorIndent: 12rem;
-
 // metal levels:
 $gold: #EDAC5B;
 $silver: #ADC1C4;
 $platinum: #999999;
 $bronze: #AB6340;
+
+//breakpoints for mediaqueries
+$large: 144rem;
+$desktop: 102.4rem;
+$tablet: 76.8rem;
+$mobile: 37.5rem;
+
+// container width
+$containerlarge: 120rem;
+$containerdesktop: 89.4rem;
+$containertablet: 64.8rem;
+$containermobile: 31.5rem;
+
 
  
