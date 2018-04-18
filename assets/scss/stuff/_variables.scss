@@ -5,7 +5,7 @@ $grey090: rgba(28, 27, 26, 0.9);//card item value font
 $grey050: rgba(28, 27, 26, 0.5);//header navbar item NON_active, card item header fonts
 $grey040: rgba(28, 27, 26, 0.4);//card view icon
 $grey010: rgba(28, 27, 26, 0.1);//card border + card item underline 1-2
-$grey007: rgba(28, 27, 26, 0.07);
+$grey007: rgba(28, 27, 26, 0.07);// box shadow
 $grey005: rgba(28, 27, 26, 0.05);//card item underline 3-5
 
 $helpbg: #E4F0FF;
@@ -19,13 +19,13 @@ $silver: #ADC1C4;
 $platinum: #999999;
 $bronze: #AB6340;
 
-//breakpoints for mediaqueries
-$large: 144rem;
-$desktop: 102.4rem;
-$tablet: 76.8rem;
-$mobile: 37.5rem;
+// //breakpoints for mediaqueries
+// $large: 144rem;
+// $desktop: 102.4rem;
+// $tablet: 76.8rem;
+// $mobile: 37.5rem;
 
-// container width
+// container
 $containerlarge: 120rem;
 $containerdesktop: 89.4rem;
 $containertablet: 64.8rem;
