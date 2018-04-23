@@ -100,7 +100,6 @@
 
 		}
 		.button {
-			border: none;
 			border-radius: 0;
 			width: 14.1rem;
 			height: 4rem;
@@ -122,7 +121,7 @@
 		.buy {
 			color: white;
 			background: blue;
-			border: none;
+			border: 0.1rem solid $blue;
 			padding-left: 0.8rem;
 			margin-right: -0.1rem;			
 		}
