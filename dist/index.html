@@ -7,42 +7,43 @@
 	<title>Eleken Test Task</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <!--       HEADER      -->
-<!-- <header class="header">
+<header class="header">
 	    <div class="wrap">
 			<div class="logo">
 	            <img src="img/logo_Insure.png" alt="INSURE.">
 	        </div>
 			<nav>
-		        <ul class="nav">
-		            <li class="nav_item active">
-		                <a href="">Personal Plans</a>
-		            </li>  
-		            <li class="nav_item ">
-		                <a href="">Business Plans</a>
-		             </li>  
-		            <li class="nav_item ">
-		                <a href="">Guide</a>
-		            </li>  
-		            <li class="nav_item ">
-		                <a href="">Blog</a>
-		            </li>                      
-		        </ul>    
+				<ul class="nav">
+					<li class="nav_item active">
+						<a href="">Personal Plans</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Business Plans</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Guide</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Blog</a>
+					</li>                      
+				</ul>    
 		    </nav>
 		    <div class="hamburger"></div>
 		</div>
-	</header> -->
+	</header>
 	<!--    MAIN SECTION    -->
 	<main>
 		
 	    <div class="container">
 		    <header>
-				<div class="list_title">Insurance list</div>
+				<div class="list_title">Insurance list:</div>
 				<div class="list_view_icons">
-					<div class="table_view"></div>
-					<div class="card_view"></div>
+					<div id="table_view"></div>
+					<div id="grid_view"></div>
 				</div>
 			</header>
 		    <div class="grid_view_wrapper">
@@ -528,7 +529,7 @@
 					</div>
 		    	</div>
 		    </div><!--            end of grid_view_wrapper  --> 
- 		    <div class="table_view_wrapper">
+ 		    <div class="table_view_wrapper hidden">
            		<header class="table_header">
                     <ul>
                 	    <li>Company</li>
@@ -859,5 +860,6 @@
 		    </div>
 	    </div>
 	</footer>
+	<script src="/js/build.js"></script>
 </body>
 </html>
