@@ -1,0 +1,129 @@
+	.card {
+		
+		width: 28.2rem;
+		height: 48.9rem;
+		border-radius: 0.2rem;
+		border: 0.1rem solid $grey010;
+		padding-top: 3rem;
+		margin-top: 4rem;
+		@media (max-width: 1024px) {
+			&nth-child(2n) {
+			 	margin-left: 2.4rem;
+			}
+		}
+		.card_header {
+			padding-left: 2.9rem;
+			height: 7.4rem;
+			display: flex;
+			align-items: flex-start;
+			.company {
+				margin-left: 2rem;
+				.name {
+					font-size: 2rem;
+					color: $grey100;
+					background-color: #fff;
+					height: 2.7rem;
+					margin-top: 0.4rem;
+					margin-bottom: 0.5rem;
+
+				}
+				.rating {
+					.star {
+						box-sizing: border-box;
+						display: inline-block;
+						width: 1.588rem;
+						height: 1.6rem;
+						margin-left: 0.265rem;
+					}
+					span:first-child {
+						margin-left: 0;
+					}
+					.golden {
+						background: url(../img/star_golden.png) no-repeat 50% 50%;
+					}
+					.grey {
+						background: url(../img/star_grey.png) no-repeat 50% 50%;
+					}
+				}
+			}
+		}
+
+
+		.card_item {
+			margin-left: 3rem;
+			margin-right: 3rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 4.1rem;
+			border-bottom: 0.1rem solid $grey005;
+			&:first-child {
+				height: 3rem;
+			}
+			&:nth-child(2), &:nth-child(3) {
+				border-bottom: 0.1rem solid $grey010;
+			}
+			
+			&:nth-child(7) {
+				border-bottom: none;
+			}
+			.card_item_header {
+				font-size: 1.4rem;
+				color: $grey050;
+				letter-spacing: -0.03rem;
+
+			}
+			.card_item_value {
+				font-size: 1.4rem;
+				color: $grey090;
+				
+			}
+		}
+		.help {
+			background-color: $helpbg;
+			font-size: 1.1rem;
+			color: $blue;
+			line-height: 1.4rem;
+			text-align: center;
+			cursor: pointer;
+		}
+		.price {
+			font-size: 3.6rem;
+			font-weight: 300;
+			text-align: center;
+			height: 9.8rem;
+			line-height: 8.5rem;
+			span:last-child {
+				font-size: 2rem;
+				font-weight: 500;
+			}
+
+		}
+		.button {
+			border-radius: 0;
+			width: 14.1rem;
+			height: 4rem;
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+			font-weight: 600;
+			letter-spacing: 0.084rem;
+			text-transform: uppercase;
+			cursor: pointer;
+			margin-bottom: -0.1rem;
+		}	
+		.overview {
+			background: $white;
+			color: $blue;
+			border: 0.1rem solid $grey010;
+			margin-left: -0.1rem;
+			padding-left: 0.4rem;
+		}
+		.buy {
+			color: white;
+			background: blue;
+			border: 0.1rem solid $blue;
+			padding-left: 0.8rem;
+			margin-right: -0.1rem;			
+		}
+		
+	}

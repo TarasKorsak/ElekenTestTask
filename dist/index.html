@@ -7,6 +7,7 @@
 	<title>Eleken Test Task</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <!--       HEADER      -->
@@ -16,20 +17,20 @@
 	            <img src="img/logo_Insure.png" alt="INSURE.">
 	        </div>
 			<nav>
-		        <ul class="nav">
-		            <li class="nav_item active">
-		                <a href="">Personal Plans</a>
-		            </li>  
-		            <li class="nav_item ">
-		                <a href="">Business Plans</a>
-		             </li>  
-		            <li class="nav_item ">
-		                <a href="">Guide</a>
-		            </li>  
-		            <li class="nav_item ">
-		                <a href="">Blog</a>
-		            </li>                      
-		        </ul>    
+				<ul class="nav">
+					<li class="nav_item active">
+						<a href="">Personal Plans</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Business Plans</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Guide</a>
+					</li>  
+					<li class="nav_item ">
+						<a href="">Blog</a>
+					</li>                      
+				</ul>    
 		    </nav>
 		    <div class="hamburger"></div>
 		</div>
@@ -38,544 +39,809 @@
 	<main>
 		
 	    <div class="container">
-	    <header>
-			<div class="list_title">Insurance list</div>
-			<div class="list_view_icons">
-				<div class="table_view"></div>
-				<div class="card_view"></div>
-			</div>
-		</header>
-<!--                        Card   #  1                          -->
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Insurcom</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span>
-	    				</div>
-	    			</div>
+		    <header>
+				<div class="list_title">Insurance list:</div>
+				<div class="list_view_icons">
+					<div id="table_view"></div>
+					<div id="grid_view"></div>
+				</div>
+			</header>
+		    <div class="grid_view_wrapper">
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Insurcom</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Health</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>PPO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle platinum"></div>
+		    				<div class="ml-5">Platinum</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$356</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
 		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Health</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>PPO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle platinum"></div>
-	    				<div class="ml-5">Platinum</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$356</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
 
-<!--                        Card   #  2                          -->
+		    	
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_HealthIns.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Health Ins</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">All-in-one</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>HMO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle silver"></div>
+		    				<div class="ml-5">Silver</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$611</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
+		    	</div>
+
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Dentalife.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Dentalife</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Dental</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>EPO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle gold"></div>
+		    				<div class="ml-5">Gold</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$283</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
+		    	</div>
+
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Insurcom</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Health</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>POS</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle bronze"></div>
+		    				<div class="ml-5">Bronze</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$214</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
+		    	</div>
+		    	
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Insurcom</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Health</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>PPO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle platinum"></div>
+		    				<div class="ml-5">Platinum</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$356</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
+		    	</div>
+
 	    	
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_HealthIns.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Health Ins</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star grey"></span><!--
-	    					--><span class="star grey"></span>
-	    				</div>
-	    			</div>
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_HealthIns.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Health Ins</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">All-in-one</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>HMO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle silver"></div>
+		    				<div class="ml-5">Silver</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$611</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
 		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">All-in-one</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>HMO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle silver"></div>
-	    				<div class="ml-5">Silver</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$611</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
 
-<!--                        Card   #  3                          -->
-
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Dentalife.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Dentalife</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star grey"></span>
-	    				</div>
-	    			</div>
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Dentalife.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Dentalife</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Dental</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>EPO</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle gold"></div>
+		    				<div class="ml-5">Gold</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$283</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
 		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Dental</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>EPO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle gold"></div>
-	    				<div class="ml-5">Gold</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$283</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
 
-<!--                        Card   #  4                          -->
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Insurcom</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span>
-	    				</div>
-	    			</div>
+		    	<div class="card">
+		   		    <div class="card_header">
+		   		    	<div class="company_logo">
+		   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+		   		    	</div>
+		    			<div class="company">
+		    				<div class="name">Insurcom</div>
+			    			<div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+		    				</div>
+		    			</div>
+			    	</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Covering:</div>
+		    			<div class="card_item_value">Health</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Type:</div>
+		    			<div class="card_item_value flex">
+		    				<div>POS</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header">Metal level:</div>
+		    			<div class="card_item_value flex">
+		    				<div class="circle bronze"></div>
+		    				<div class="ml-5">Bronze</div>
+		    				<div class="help circle ml-5">?</div>
+		    			</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Drugs:</div>
+		    			</div>
+		    			<div class="card_item_value">$15</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Primary Care Visits:</div>
+		    			</div>
+		    			<div class="card_item_value">$75</div>
+		    		</div>
+		    		<div class="card_item">
+		    			<div class="card_item_header flex">
+		    				<div class="help circle">?</div>
+		    				<div class="ml-5">Yearly Deductible</div>
+		    			</div>
+		    			<div class="card_item_value">$6000</div>
+		    		</div>
+					<div class="price">
+						<span>$214</span><span>/</span><span>mon</span>
+					</div>
+					<div class="flex">
+						<button class="button overview">Overview</button>
+						<button class="button buy">Buy</button>
+					</div>
 		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Health</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>POS</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle bronze"></div>
-	    				<div class="ml-5">Bronze</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$214</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
-<!--                        Card   #  1                          -->
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Insurcom</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span>
-	    				</div>
-	    			</div>
-		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Health</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>PPO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle platinum"></div>
-	    				<div class="ml-5">Platinum</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$356</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
+		    </div><!--            end of grid_view_wrapper  --> 
+ 		    <div class="table_view_wrapper hidden">
+           		<header class="table_header">
+                    <ul>
+                	    <li>Company</li>
+                        <li>Covering</li>
+                        <li>Type</li>
+                        <li>Metal level</li>
+                        <li>DRugs</li>
+                        <li>Primary<br>Care Visits</li>
+                        <li>Yearly<br>Deductible</li>
+                        <li>Price</li>
+                        <li></li>
+            		</ul>
+                </header>
+            	<section class="table_body">	
+                    <ul>
+                		<li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Insurcom</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+                                </div>
+                            </div>
+                        </li>
+                		<li>Health</li>
+                		<li>
+                            <div class="type_cell flex">
+                                <div>PPO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle platinum"></div>
+                                <div class="ml-5">Platinum</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>$15</li>
+                        <li>$75</li>
+                        <li>$6000</li>
+                        <li>$356/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                		<li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_HealthIns.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Health Ins</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star grey"></span><span class="star grey"></span>
+                                </div>
+                            </div>
+                        </li>
+                		<li>All-in-one </li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>HMO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle silver"></div>
+                                <div class="ml-5">Silver</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>100%</li>
+                        <li>$45</li>
+                        <li>$4500</li>
+                        <li>$611/mon</li>
+                		<li>
+                			<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                		</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Dentalife.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Dentalife</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star grey"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Dental</li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>EPO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle gold"></div>
+                                <div class="ml-5">Gold</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>100%</li>
+                        <li>$75</li>
+                        <li>$5000</li>
+                        <li>$283/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Insurcom</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Vision</li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>POS</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle bronze"></div>
+                                <div class="ml-5">Bronze</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>100%</li>
+                        <li>$60</li>
+                        <li>$2600</li>
+                        <li>$214/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Medicon.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Medicon</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Health</li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>PPO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle catastrophic"></div>
+                                <div class="ml-5">Catastrophic</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>20$</li>
+                        <li>40%</li>
+                        <li>$6000</li>
+                        <li>$300/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_HealthIns.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Health Ins</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star grey"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Dental</li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>POS</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle platinum"></div>
+                                <div class="ml-5">Platinum</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>$15</li>
+                        <li>$75</li>
+                        <li>$5000</li>
+                        <li>$234/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Insurcom.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Insurcom</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Health</li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>HMO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle gold"></div>
+                                <div class="ml-5">Gold</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>100%</li>
+                        <li>$45</li>
+                        <li>$4500</li>
+                        <li>$366/mon</li>
+                        <li>
+                        	<div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="company-cell">
+                                <div class="company_logo">
+                                    <img src="img/logo_Medicon.png" alt="logo_Insurcom">
+                                </div>
+                                <div class="company">
+                                    <div class="name">Medicon</div>
+                                    <div class="rating"><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span><span class="star golden"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>All-in-one </li>
+                        <li>
+                            <div class="type_cell flex">
+                                <div>EPO</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_item_value flex">
+                                <div class="circle catastrophic"></div>
+                                <div class="ml-5">Catastrophic</div>
+                                <div class="help circle ml-5">?</div>
+                            </div>
+                        </li>
+                        <li>$15</li>
+                        <li>50%</li>
+                        <li>$2600</li>
+                        <li>$371/mon</li>
+                        <li>
+                            <div class="button_cell" >
+                                <button class="button overview">Overview</button>
+                                <button class="button buy ml-5">Buy</button>
+                            </div>
+                        </li>
+                    </ul>
+    			</section>
 
-<!--                        Card   #  2                          -->
-	    	
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_HealthIns.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Health Ins</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star grey"></span><!--
-	    					--><span class="star grey"></span>
-	    				</div>
-	    			</div>
-		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">All-in-one</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>HMO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle silver"></div>
-	    				<div class="ml-5">Silver</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$611</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
-
-<!--                        Card   #  3                          -->
-
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Dentalife.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Dentalife</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star grey"></span>
-	    				</div>
-	    			</div>
-		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Dental</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>EPO</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle gold"></div>
-	    				<div class="ml-5">Gold</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$283</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
-
-<!--                        Card   #  4                          -->
-	    	<div class="card">
-	   		    <div class="card_header">
-	   		    	<div class="company_logo">
-	   		    		<img src="img/logo_Insurcom.png" alt="logo_Insurcom">
-	   		    	</div>
-	    			<div class="company">
-	    				<div class="name">Insurcom</div>
-		    			<div class="rating"><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span><!--
-	    					--><span class="star golden"></span>
-	    				</div>
-	    			</div>
-		    	</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Covering:</div>
-	    			<div class="card_item_value">Health</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Type:</div>
-	    			<div class="card_item_value flex">
-	    				<div>POS</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header">Metal level:</div>
-	    			<div class="card_item_value flex">
-	    				<div class="circle bronze"></div>
-	    				<div class="ml-5">Bronze</div>
-	    				<div class="help circle ml-5">?</div>
-	    			</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Drugs:</div>
-	    			</div>
-	    			<div class="card_item_value">$15</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Primary Care Visits:</div>
-	    			</div>
-	    			<div class="card_item_value">$75</div>
-	    		</div>
-	    		<div class="card_item">
-	    			<div class="card_item_header flex">
-	    				<div class="help circle">?</div>
-	    				<div class="ml-5">Yearly Deductible</div>
-	    			</div>
-	    			<div class="card_item_value">$6000</div>
-	    		</div>
-				<div class="price">
-					<span>$214</span><span>/</span><span>mon</span>
-				</div>
-				<div class="flex">
-					<button class="button overview">Overview</button>
-					<button class="button buy">Buy</button>
-				</div>
-	    	</div>
-<!--                      end of  Cards                           -->
+		    </div>
 	    </div>
 	</main>
 	
@@ -594,5 +860,6 @@
 		    </div>
 	    </div>
 	</footer>
+	<script src="./js/build.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.header {
+	height: 7rem;
+	justify-content: flex-start ;
+	box-shadow: 0px 1px 4px $grey007;
+	.wrap {
+		display: flex;
+		height: 100%;
+		margin: auto;
+		width: $containerlarge;
+	@media (max-width: 1439px) {
+		width: $containerdesktop;
+	}
+	@media (max-width: 1024px) {
+		width: $containertablet;
+		justify-content: space-between;
+	}
+	@media (max-width: 768px) {
+		width: $containermobile;
+		justify-content: space-between;
+	}
+	
+	}
+	.logo {
+		margin-right: 30.4rem;
+		align-self: center;
+		@media (max-width: 768px) {
+			margin: 0 0;
+		}
+	}
+	nav {
+		@media (max-width: 1024px) {
+			display: none;
+		}
+		.nav {
+			display: flex;
+			align-items: stretch;
+			line-height: 4.5rem;
+			list-style: none;
+			.nav_item {
+				margin-left: 1.6rem;
+				padding: 1rem;
+				cursor: pointer;
+				a {
+					text-decoration: none;
+					font-size: 1.4rem;
+					color: $grey050;
+					vertical-align: middle;
+				}
+				&.active {
+						border-bottom: 0.3rem solid $blue;
+						color: $grey100;
+				}
+			}
+		}
+	}
+	.hamburger {
+		display: none;
+
+		@media (max-width: 1024px) {
+			display: block;
+			width: 2.1rem;
+			height: 1.4rem;
+			background: url(../img/icon_burger.png) 0 0 no-repeat;
+			align-self: center;
+		}
+	}
+
+}

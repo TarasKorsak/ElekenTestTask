@@ -1,0 +1,1 @@
+$("#table_view").click(function(){"none"!==$(".grid_view_wrapper").css("display")&&($(".grid_view_wrapper").toggle(),$(".table_view_wrapper").toggle())}),$("#grid_view").click(function(){"none"!==$(".table_view_wrapper").css("display")&&($(".table_view_wrapper").toggle(),$(".grid_view_wrapper").toggle())});
