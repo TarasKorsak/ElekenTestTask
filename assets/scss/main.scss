@@ -10,6 +10,7 @@ header {
 		color: $grey100;
 		border-bottom: 0.1rem solid $grey010;
 		align-items: flex-end;
+		// margin-bottom: rem;
 		@media (min-width: 768px) {
 			text-align: left;
 		}
@@ -21,14 +22,14 @@ header {
 			width: 16rem;
 			height: 3.3rem;
 			text-align: left;
-			margin-bottom: 1rem;
+			margin-bottom: 0.8rem;
 		}
 		.list_view_icons {
 			display: none;
 			cursor: pointer;
 			width: 6.6rem;
 			height: 1.8rem;
-			margin-bottom: 1.8rem;
+			margin-bottom: 1.7rem;
 			@media (min-width: 1440px) {
 				display: flex;
 				align-items: center;
@@ -41,8 +42,9 @@ header {
 			#grid_view {
 				width: 3.3rem;
 				height: 1.8rem;
-				border-left: 0.1rem solid $grey010; 
-				background: url(../img/icon_card_view.png) no-repeat 100% 50%;;
+				border-left: 0.1rem solid $grey100; 
+				background: url(../img/icon_card_view.png) no-repeat 100% 50%;
+				opacity: 0.4;
 			}
 		}
 }
@@ -78,6 +80,9 @@ header {
 		margin-bottom: 8.4rem;
 		ul {
 			display: table-row;
+			&nth-child(2) {
+				height: 7.6rem;
+			}
 		}
 		li {
 			display: table-cell;
@@ -92,15 +97,15 @@ header {
 			li {
 				vertical-align: top;
 				border: none;
-				height: 5.7rem;
-				padding-top: 3rem;
+				height: 5rem;
+				padding-top: 2.5rem;
 				text-transform: uppercase;
 				letter-spacing: 0.1rem;
 				font-size: 1rem;
 				font-weight: 600;
 				color: $grey040;
 				text-align: left;
-				line-height: 1.4rem;
+				line-height: 1.6rem;
 
 			}
 		}
@@ -134,11 +139,11 @@ header {
 							.name {
 								
 								height: 1.9rem;
-								margin-top: 0.2rem;
+								margin-top: 0.5rem;
 								letter-spacing: -0.02rem;
 							}
 							.rating {
-								margin-top: 0.3rem;
+								margin-top: 0.1rem;
 								.star {
 									box-sizing: border-box;
 									display: inline-block;
@@ -195,7 +200,7 @@ header {
 							letter-spacing: 0.084rem;
 							text-transform: uppercase;
 							cursor: pointer;
-							padding-left: 0.4rem;
+							// padding-left: 0.2rem;
 							padding-bottom: 0.3rem;
 						}
 						.overview {
@@ -203,6 +208,7 @@ header {
 								color: $blue;
 								width: 10.9rem;
 								border: 0.1rem solid $grey010;
+								letter-spacing: -0.025rem;
 								
 						}
 						.buy {
