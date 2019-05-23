@@ -12,7 +12,7 @@ cd ElekenTestTask
 npm install
 
 # serve at localhost:3000
-gulp dev
+gulp
 
 # build for production with minification
 gulp prod
