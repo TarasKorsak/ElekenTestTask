@@ -2,6 +2,31 @@
 
 @import "header";
 
+body {
+	overflow-x: hidden;
+}
+.plate {
+  position: absolute;
+  top: 20px;
+  right: -55px;
+  background-color: rgba(253, 127, 1, 1);
+  transform: rotate(45deg);
+  height: 45px;
+  line-height: 45px;
+  padding: 0 45px;
+  transition: 0.5s;
+	&:hover {
+		background-color: rgba(253, 127, 1, 0.8);
+		cursor: pointer;
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
+
 header {
 		display: flex;
 		// display: none;
@@ -226,5 +251,6 @@ header {
 	}
 	// }
 }
+
 
 @import 'footer';
