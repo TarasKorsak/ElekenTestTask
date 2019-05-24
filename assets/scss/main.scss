@@ -105,7 +105,7 @@ header {
 		margin-bottom: 8.4rem;
 		ul {
 			display: table-row;
-			&nth-child(2) {
+			&:nth-child(2) {
 				height: 7.6rem;
 			}
 		}
